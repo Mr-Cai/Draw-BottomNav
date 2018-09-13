@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/jet_pack_chat.png" />
+        <ignore path="src/main/res/drawable/jet_pack_logo.png" />
+        <ignore path="src/main/res/drawable/jet_pack_logo_1.png" />
+        <ignore path="src/main/res/drawable/jet_pack_logo_small.png" />
+    </issue>
+</lint>
