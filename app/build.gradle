@@ -1,18 +1,15 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.sagar.navigationuidemo"
+        applicationId "cn.example"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        vectorDrawables.useSupportLibrary true
     }
     buildTypes {
         release {
@@ -20,18 +17,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    implementation "com.android.support:appcompat-v7:28.0.0-rc02"
-    implementation "com.android.support:design:28.0.0-rc02"
-    implementation "com.android.support:support-v4:28.0.0-rc02"
-    implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha05"
-    implementation "android.arch.navigation:navigation-ui-ktx:1.0.0-alpha05"
+    implementation 'androidx.appcompat:appcompat:1.0.2' //扩展兼容包
+    implementation "com.google.android.material:material:1.0.0" //材料设计库
+    // 导航面板
+    implementation "android.arch.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "android.arch.navigation:navigation-ui-ktx:$navigation_version"
+
 }

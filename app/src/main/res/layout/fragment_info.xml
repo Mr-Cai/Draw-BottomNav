@@ -3,23 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.InfoFragment"
-    android:orientation="vertical"
     android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.InfoFragment"
     tools:ignore="UseCompoundDrawables">
 
     <ImageView
         android:layout_width="240dp"
         android:layout_height="240dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/jet_pack_logo"
-        android:contentDescription="@null" />
+        android:contentDescription="@null"
+        android:src="@drawable/jet_pack_logo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoLink="web"
         android:text="@string/info_text"
-        android:textColorLink="@color/colorAccent"/>
+        android:textColorLink="@color/colorAccent" />
 
 </LinearLayout>
